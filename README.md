@@ -1,7 +1,7 @@
 # production_schedule_optimization
 A Project for Optimizing Production Line Schedule
 
-##### Overview
+## Overview
 <img width="1071" alt="job-shop-scheduling-problem" src="https://github.com/Yufei-Terry/production_schedule_optimization/assets/146860931/44012583-a0ba-446d-a125-16a2c3cc17aa">
 
 ### 1. What is job-shop schedule problem
@@ -52,4 +52,32 @@ jobs_data
 ```
 result:
 ![image](https://github.com/Yufei-Terry/production_schedule_optimization/assets/146860931/ff5b9c70-593a-4e52-abb3-f8aed666a877)
+
+### 4. Solution
+##### 4.1 
+
+
+### 5. Model Programming
+##### 5.1 Import required libraries
+'''python
+pip install ortools
+import plotly.figure_factory as ff
+import collections
+from ortools.sat.python import cp_model
+import pandas as pd
+import datetime
+from collections import defaultdict
+import math
+'''
+
+##### 5.2 Initialization and Calculation of Problem Parameters
+'''python
+machines_count = 1 + max(task[0] for job in jobs_data for task in job)
+all_machines = range(machines_count)
+jobs_count = len(jobs_data)
+# Computes horizon dynamically as the sum of all durations.
+horizon = sum(task[1] for job in jobs_data for task in job)
+'''
+
+##### 5.3 Declare the model
 
