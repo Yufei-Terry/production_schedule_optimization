@@ -59,7 +59,7 @@ result:
 
 ### 5. Model Programming
 ##### 5.1 Import required libraries
-'''python
+```python
 pip install ortools
 import plotly.figure_factory as ff
 import collections
@@ -68,7 +68,7 @@ import pandas as pd
 import datetime
 from collections import defaultdict
 import math
-'''
+```
 
 ##### 5.2 Initialization and Calculation of Problem Parameters
 ```python
