@@ -1,4 +1,4 @@
-# production_schedule_optimization
+# Job Shop Scheduling Optimization
 A Project for Optimizing Production Line Schedule
 
 ## Overview
