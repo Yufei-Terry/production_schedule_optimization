@@ -50,8 +50,6 @@ for index, row in machines_sequence_df.iterrows():
 
 jobs_data
 ```
-result:
-![image](https://github.com/Yufei-Terry/production_schedule_optimization/assets/146860931/ff5b9c70-593a-4e52-abb3-f8aed666a877)
 
 ### 4. Solution
 ##### 4.1 
